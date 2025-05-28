@@ -27,7 +27,7 @@ body {
 .fade-in {
   opacity: 0;
   animation: fadeIn 5s ease forwards;
-  animation-delay: 5s;
+  animation-delay: 1s;
 }
 
 .fade-in-text {
@@ -51,7 +51,8 @@ body {
   width: 100%;
   height: auto;
   display: block;
-margin-top: 250px
+margin-top: 250px;
+	margin-bottom: 350px;
 }
 
 
@@ -97,3 +98,5 @@ width: 100vw;       /* 100% of viewport width */
   align-items: center;      /* Centers vertically */
 
 }
+		
+		
