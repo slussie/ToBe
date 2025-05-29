@@ -140,6 +140,37 @@ body::-webkit-scrollbar {
 
 }
 
+#rotate-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A1919;
+  color: #FFDD68;
+  font-family: "Amatic";
+  font-size: 6vw;
+  text-align: center;
+  padding-top: 40vh;
+}
+#rotate-warning {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1A1919;
+  color: #FFDD68;
+  font-family: "Amatic";
+  font-size: 6vw;
+  text-align: center;
+  padding-top: 40vh;
+}
+
 @media screen and (max-width: 768px) {
   .text,
   .text_2,
