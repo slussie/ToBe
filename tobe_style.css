@@ -1,0 +1,174 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text, .text_2, .text_3 {
+    font-size: 4vw;
+    margin-top: 10vh;
+    background-size: 90vw;
+    padding: 5vw;
+  }
+
+  .video_1, .video_2 {
+    max-width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .fg_gif1, .fg_gif2, .fg_gif3,
+  .sf_gif2, .sf_gif3 {
+    width: 60vw;
+    top: auto;
+    left: auto;
+    position: static;
+    display: block;
+    margin: 2vh auto;
+  }
+
+  .organs, .stuff {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+body {
+  background-color: #1A1919;
+  color: #FFDD68;
+  font-family: "Amatic";
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.text {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 1s;
+
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 1.4vw;
+	
+  position: relative;
+  background-image: url('images/sheep.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10vw; 
+  background-size: 75vw;
+}
+
+
+
+.video_1, .video_2 {
+
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+	
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 3s;
+
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.text_2 {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 1.3vw;
+	
+}
+
+
+.organs {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('images/text.png');
+  background-position: center;
+  background-size: 75vw;
+	
+  
+}
+
+.fg_gif1 {
+    width: 45vw;
+    z-index: 1;
+    top: -25vh;
+    left: 3vw;
+}
+
+.fg_gif2 {
+  width: 40vw;
+  z-index: 2;
+  top: 18vh;
+  left: 62vw;
+}
+
+
+.fg_gif3 {
+    width: 27vw;
+    z-index: 3;
+    top: 10vh;
+    left: 50vw;
+
+}
+
+
+.text_3 {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 1.3vw;
+	
+}
+
+.stuff {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.sf_gif3 {
+    width: 45vw;
+    z-index: 1;
+    top: -40vh;
+    left: 10vw;
+}
+
+.sf_gif2 {
+  width: 40vw;
+  z-index: 2;
+  top: 18vh;
+  left: 62vw;
+}
+
+
+.sf_gif1 {
+    width: 40vw;
+    z-index: 3;
+    top: 1vh;
+    left: 50vw;
+
+}
+
+
