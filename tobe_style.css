@@ -7,8 +7,8 @@
 
 body {
   background-color: #1A1919;
-  color: #FFDD68;
-  font-family: "Amatic";
+  color: #B8B6AE;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 
 
-.video_1, .video_2 {
+.video_1, .video_2, .video_3 {
 
   margin-top: 10vw;
   margin-bottom: 10vw;
@@ -174,7 +174,9 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 768px) {
   .text,
   .text_2,
-  .text_3 {
+  .text_3,
+  .text_4,
+  .text_5 {
     font-size: 5vw;
     margin-top: 5vh;
     padding: 10vw 5vw;
@@ -183,7 +185,8 @@ body::-webkit-scrollbar {
   }
 
   .video_1,
-  .video_2 {
+  .video_2,
+  .video_3 {
     width: 100vw;
     margin: 5vh 0;
   }
@@ -198,6 +201,8 @@ body::-webkit-scrollbar {
 
   .organs img,
   .stuff img,
+  .face_img img,
+  .black img,
   .fg_gif1,
   .fg_gif2,
   .fg_gif3,
@@ -219,6 +224,66 @@ body::-webkit-scrollbar {
   .sf_gif3 {
     z-index: auto;
   }
+}
+
+.stuff {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('images/text2.png');
+  background-position: center;
+  background-size: 75vw;
+  background-repeat: no-repeat;
+	
+	}
+
+
+.text_4 {
+  text-align: center;
+  margin-left: 35vw;
+  margin-top: 5vh;
+  font-size: 1.3vw;
+	
+	
+}
+
+.face_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text_5 {
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 1.3vw;
+  margin-bottom: 20vh;
+	
+	
+}
+
+.black_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
