@@ -261,6 +261,12 @@ html, body {
   margin-top: 10vh;
   font-size: 0.9vw;
   margin-bottom: 20vh;
+  width: 60ch;
+  
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5vw;
+  display:block;
 	
 	
 }
@@ -297,6 +303,7 @@ html, body {
 .download-button:hover {
   background-color: #52504F;
 }
+
 
 
 
