@@ -145,7 +145,7 @@ html, body {
 
 }
 
-#rotate-warning {
+--rotate-warning {
   display: none;
   position: fixed;
   top: 0;
@@ -193,7 +193,7 @@ html, body {
   .organs img,
   .stuff img,
   .face_img img,
-  .black_img img,
+ 
   .fg_gif1,
   .fg_gif2,
   .fg_gif3,
@@ -201,7 +201,7 @@ html, body {
   .sf_gif2,
   .sf_gif3 {
     width: 80vw !important;
-    height: 100vh;
+    height: auto;
     position: static !important;
     transform: none !important;
     margin: 4vh 0;
@@ -272,49 +272,70 @@ html, body {
 }
 
 .black_img {
- position: relative;
-  width: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .drip-image {
-   width: 100%;
+  width: 100vw;
   height: auto;
   display: block;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .download-button {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #353332;
   color: #C8C3BD;
-  padding: 1vw 2vw;
+  padding: 1em 2em;
   text-decoration: none;
-  font-size: 1.2vw;
-  border-radius: 0.5vw;
-  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  border-radius: 0.5em;
   z-index: 10;
+  transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
   background-color: #52504F;
 }
 
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .black_img {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .drip-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+
   .download-button {
-    font-size: 4vw;
+    font-size: 5vw;
     padding: 2vw 4vw;
-    top: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
+
 
 
 
