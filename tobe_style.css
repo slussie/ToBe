@@ -145,7 +145,7 @@ html, body {
 
 }
 
---rotate-warning {
+#rotate-warning {
   display: none;
   position: fixed;
   top: 0;
@@ -303,37 +303,6 @@ html, body {
 
 .download-button:hover {
   background-color: #52504F;
-}
-
-
-@media (max-width: 768px) {
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    width: 100vw;
-  }
-
-  .black_img {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .drip-image {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
-  }
-
-  .download-button {
-    font-size: 5vw;
-    padding: 2vw 4vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 
