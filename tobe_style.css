@@ -201,7 +201,7 @@ html, body {
   .sf_gif2,
   .sf_gif3 {
     width: 80vw !important;
-    height: auto;
+    height: 100vh;
     position: static !important;
     transform: none !important;
     margin: 4vh 0;
