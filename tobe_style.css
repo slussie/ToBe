@@ -15,6 +15,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 .text {
   opacity: 0;
@@ -149,27 +154,13 @@ body::-webkit-scrollbar {
   width: 100vw;
   height: 100vh;
   background-color: #1A1919;
-  color: #FFDD68;
-  font-family: "Amatic";
+  color: #B8B6AE;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
   font-size: 6vw;
   text-align: center;
   padding-top: 40vh;
 }
-#rotate-warning {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100vw;
-  height: 100vh;
-  background-color: #1A1919;
-  color: #FFDD68;
-  font-family: "Amatic";
-  font-size: 6vw;
-  text-align: center;
-  padding-top: 40vh;
-}
+
 
 @media screen and (max-width: 768px) {
   .text,
@@ -246,9 +237,9 @@ body::-webkit-scrollbar {
 
 .text_4 {
   text-align: center;
-  margin-left: 35vw;
   margin-top: 5vh;
   font-size: 1.3vw;
+  margin-bottom: 25vh;
 	
 	
 }
@@ -268,22 +259,44 @@ body::-webkit-scrollbar {
 .text_5 {
   text-align: center;
   margin-top: 10vh;
-  font-size: 1.3vw;
+  font-size: 0.9vw;
   margin-bottom: 20vh;
 	
 	
 }
 
 .black_img {
-  position: relative;
-  width: 100%;
-  height: auto;
-  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
+  position:relative;
+  width: 100vw;         
+  height: auto;        
+  display: block;
+  object-fit: contain;
 }
+
+.drip-image {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.download-button {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #353332;
+  color: #C8C3BD;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #52504F;
+}
+
 
 
