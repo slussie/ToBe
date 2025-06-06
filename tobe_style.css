@@ -272,20 +272,19 @@ html, body {
 }
 
 .black_img {
-  position:relative;
-  width: 100vw;         
-  height: auto;        
-  display: block;
-  object-fit: contain;
+ position: relative;
+  width: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .drip-image {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-	
+   width: 100%;
   height: auto;
   display: block;
 }
@@ -294,7 +293,7 @@ html, body {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: #353332;
   color: #C8C3BD;
   padding: 1vw 2vw;
@@ -302,10 +301,19 @@ html, body {
   font-size: 1.2vw;
   border-radius: 0.5vw;
   transition: background-color 0.3s ease;
+  z-index: 10;
 }
 
 .download-button:hover {
   background-color: #52504F;
+}
+
+@media screen and (max-width: 768px) {
+  .download-button {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    top: 40%;
+  }
 }
 
 
